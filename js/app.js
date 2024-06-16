@@ -1,1 +1,4 @@
-const swiperTexr = new Swiper(".swiper")
+const swiperText = new Swiper('.swiper', {
+    speed: 1500,
+    mousewheel: {  }
+})

@@ -40,4 +40,40 @@ body {
     text-transform: uppercase;
     letter-spacing: calc(var(--index) * 1.6);
     margin-bottom: calc(var(--index) * 2.4);
+    position: relative;
+}
+
+.slide__content h2::after {
+    content: '';
+    height: 1px;
+    width: 20%;
+    background-color: rgba(255 255 255 / .40);
+    position: absolute;
+    left: 40%;
+    bottom: calc(var(--index) * -1);
+}
+
+.slide__content p {
+    font-size: calc(var(--index) * .8);
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * 1);
+    color: rgba(255 255 255 / .8);
+    margin-bottom: calc(var(--index) * 4);
+}
+
+.slide__content button {
+    padding: 12px 50px;
+    font-size: 16px;
+    border-radius: 10em;
+    background-color: transparent;
+    border: 2px solid #afb3c0;
+    color: #afb3c0;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+}
+
+.video-background {
+    position: fixed;
+    
 }

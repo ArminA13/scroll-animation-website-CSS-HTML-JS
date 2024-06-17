@@ -5,10 +5,39 @@
 }
 
 :root {
-
+    --index: calc(1vw + 1vh);
+    --swiper-navigation-size: 32px;
+    --swiper-theme-color: #4b4d53;
+    --swiper-navigation-sides-offset: 40px;
+    --swiper-pagination-bottom:24px;
+    --swiper-pagination-color:#afb3c0;
+    --swiper-pagination-bullet-inactive-color: #36373c;
+    --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
 body {
     background-color: black;
     color: white;
+}
+
+.slider {
+    height: 100vh;
+}
+
+.slider .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide__content {
+    text-align: center;
+}
+
+.slide__content h2{
+    font-size: calc(var(--index) * 4);
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * 1.6);
+    margin-bottom: calc(var(--index) * 2.4);
 }
